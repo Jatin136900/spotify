@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    background-color: blue;
+    border-radius: 15px;
+    width: 40%;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+    margin: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.parent::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.453);
+    transition: all 0.4s;
+
+}
+
+.parent:hover::before {
+    top: 0;
+    /* transition: all 0.4s; */
+}
+
+.parent img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.parent p {
+    width: 90%;
+    margin-left: 30px;
+    padding: 10px 0;
+}
+
+.parent h1,
+h4 {
+    padding: 7px 0;
+}
+
+.star1 {
+    margin: 3px;
+    color: yellow;
+}
+
+.main10 {
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+    right: 0;
+    border-radius: 0 10px 0 40px;
+    width: 70px;
+    height: 50px;
+    background-color: blueviolet;
+    text-align: center;
+    z-index: 2;
+}
+
+.jatin {
+    display: flex;
+    justify-content: space-evenly;
+}

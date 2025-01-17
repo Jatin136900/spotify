@@ -4,15 +4,20 @@
     box-sizing: border-box;
     font-family: "Poppins";
 }
+.marco{
+    position: relative;
+}
 .parents{
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: 14px;
     background-color: rgba(0, 0, 0, 0.893);
     color: #fff;
     padding: 10px 20px;
     align-items: center;
-    position: relative;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 }
 .parents input{
     padding: 16px 0px 16px 50px  ;
@@ -31,40 +36,42 @@
     background-color: #fff;
     padding: 10px 25px;
     border-radius: 20px;
+    font-size: 14px;
 }
 .parents span{
     font-size: 25px;
 }
 .search{
     position: absolute;
-    left: 397px;
+    left: 391px;
 }
 .home{
     position: absolute;
     left: 335px;
+    
 }
 .film{
     position: absolute;
-    right: 583px;
+    right: 569px;
 }
 
 
 .parents1{
     background-color: rgba(0, 0, 0, 0.815);
-    width: 25%;
+    width: 22%;
     margin-top: 20px;
     color: #fff;
     border-radius: 10px;
     margin-left: 10px;
-    max-height: 500px;
-    min-height: 630px;
-    position: relative;
+    position: fixed;
+    top: 73px;
 }
 .child{
     display: flex;
     /* justify-content: space-between; */
     padding: 20px 25px;
     align-items: center;
+    position: relative;
 }
 .plus{
     font-size: 25px;
@@ -79,10 +86,10 @@
     right: 30px;
 }
 .child1{
-    background-color: rgba(0, 0, 0, 0.264);
+    background-color: rgba(0, 0, 0, 0.795);
     width: 94%;
     border-radius: 10px;
-    margin: 10px 0 30px 12px;
+    margin: 0 0 0px 12px;
     padding: 16px 20px;
 }
 .child1 p , h4{
@@ -104,8 +111,8 @@
 .child2{
     display: flex;
     justify-content: space-evenly;
-    width: 80%;
-    margin: 10px 0 10px 25px;
+    width: 95%;
+    margin: 10px 0 10px 10px;
 }
 .child2 a{
     color: #ffffff71;
@@ -125,7 +132,7 @@
     margin: 20px 0 20px 30px;
     border: solid #fff 1px;
     padding: 7px 20px;
-    width: 33%;
+    width: 38%;
     border-radius: 20px;
 }
 .english i{
@@ -136,6 +143,7 @@
     /* justify-content: space-between; */
     background-color: rgba(0, 0, 0, 0.893);
     color: #fff;
+    position: relative;
 
 }
 .parents3 img{
@@ -151,19 +159,30 @@
 }
 .parents2{
     background-color: rgba(0, 0, 0, 0.815);
-    margin: 20px 10px 10px 20px ;
+    margin: 90px 10px 10px 350px ;
     width: 76%;
     border-radius: 10px;
  
 }
 .parents2 h1{
     margin: 10px 20px;
+    font-size: 27px;
+}
+
+.parents2 h1:hover{
+    text-decoration: underline;
 }
 .parents3{
     padding: 30px;
+    position: relative;
+
+
 }
 .parents3 h2{
       font-size: 17px;
+}
+.parents3 h2:hover{
+    text-decoration: underline;
 }
 .show{
     display: flex;
@@ -178,15 +197,91 @@
 }
 .main22div{
     display: flex;
-    padding: 0 60px;
+    padding: 0 35px;
     justify-content: space-around;
 }
 .slbum h2{
     font-size: 15px;
     padding: 7px 0;
 }
+.slbum h2:hover{
+    text-decoration: underline;
+
+}
 .slbum p{
     font-size: 13px;
     padding: 7px 0;
+    width: 80%;
     
 }
+.slbum p:hover{
+    text-decoration: underline;
+
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0;
+}
+.footer1 a{
+    text-decoration: none;
+    color: #ffffff69;
+    font-size: 15px;
+    transition: all 0.2s;
+}
+.footer1 a:hover{
+    text-decoration: underline;
+    font-size: 16px;
+    color: #fff;
+}
+.insta span{
+    font-size: 30px;
+    padding: 0 12px;
+    color: #ffffff69;
+    border-radius: 20px;
+    transition: all 0.2s;
+
+}
+.insta span:hover{
+    font-size: 31px;
+    color: rgba(128, 128, 128, 0.607);
+}
+.insta{
+    margin-left: 30px;
+}
+.about{
+    padding: 7px 0;
+}
+.footer1 h3{
+    padding: 13px 0;
+}
+hr{
+    width: 95%;
+    margin: 30px 0 30px 30px;
+}
+.last{
+    margin-left: 30px;
+    margin-bottom: 80px;
+}
+.show h3:hover{
+    text-decoration: underline;
+}
+.parents3.playbutton{
+    display: none;
+}
+
+.parents3 .playbutton:hover{
+
+   background-color: green;
+   border-radius: 50%;
+   padding: 5px 15px;
+   font-size: 25px;
+   position: absolute;
+   top: 100px;
+   right: 32px;
+   color: black;
+   /* overflow: hidden; */
+   height: 50px;
+   width: 50px;
+}
+
