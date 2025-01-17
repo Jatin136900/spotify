@@ -26,6 +26,7 @@
     border:  1px solid rgba(0, 0, 0, 0);
     background-color: rgba(0, 0, 0, 0.467);
     margin-left: 150px;
+    color: #fff;
 }
 .parents a{
     text-decoration: none;
@@ -155,6 +156,8 @@
 .maindiv11{
     display: flex;
     margin: 20px 10px;
+    overflow-x: scroll;
+
     
 }
 .parents2{
